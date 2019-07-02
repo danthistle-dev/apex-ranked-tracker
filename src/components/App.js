@@ -5,7 +5,7 @@ import Header from './Header';
 
 import Home from '../views/Home';
 import Login from '../views/Login/';
-import SignUp from '../views/SignUp/'
+import SignUp from '../views/SignUp/';
 import PrivateRoute from '../PrivateRoute';
 
 class App extends React.Component {
