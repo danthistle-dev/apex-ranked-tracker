@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Login = ({ onSubmit }) => {
   return (
@@ -27,8 +28,10 @@ const Login = ({ onSubmit }) => {
           </label>
         </div>        
         <button className="ui submit button" type="submit">Log in</button>
+        <Link to="/signup">Or sign up</Link>
       </form>
       </div>
+      
     </div>
   );
 }

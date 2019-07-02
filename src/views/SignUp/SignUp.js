@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SignUpView = ({ onSubmit }) => {
   return (
@@ -27,6 +28,7 @@ const SignUpView = ({ onSubmit }) => {
           </label>
         </div>        
         <button className="ui submit button" type="submit">Sign Up</button>
+        <Link to="/login">Or log in</Link>
       </form>
     </div>
     </div>
