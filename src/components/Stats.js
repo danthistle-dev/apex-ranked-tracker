@@ -22,16 +22,46 @@ class Stats extends React.Component {
       .reduce((prev, next) => prev + next));
 
     switch (true) {
-      case rp >= 0 && rp <= 119:
-        return 'Bronze';
-      case rp >= 120 && rp <= 279:
-        return 'Silver';
-      case rp >= 280 && rp <= 479:
-        return 'Gold';
-      case rp >= 480 && rp <= 719:
-        return 'Platinum';
-      case rp >= 720 && rp <= 999:
-        return 'Diamond';
+      case rp >= 0 && rp <= 29:
+        return 'Bronze IV';
+      case rp >= 30 && rp <= 59:
+        return 'Bronze III';
+      case rp >= 60 && rp <= 89:
+        return 'Bronze II';
+      case rp >= 90 && rp <= 119:
+        return 'Bronze I';
+      case rp >= 120 && rp <= 159:
+        return 'Silver IV';
+      case rp >= 160 && rp <= 199:
+        return 'Silver III';
+      case rp >= 200 && rp <= 239:
+        return 'Silver II';
+      case rp >= 240 && rp <= 279:
+        return 'Silver I';
+      case rp >= 280 && rp <= 329:
+        return 'Gold IV';
+      case rp >= 330 && rp <= 379:
+        return 'Gold III';
+      case rp >= 380 && rp <= 429:
+        return 'Gold II';
+      case rp >= 430 && rp <= 479:
+        return 'Gold I';
+      case rp >= 480 && rp <= 539:
+        return 'Platinum IV';
+      case rp >= 540 && rp <= 599:
+        return 'Platinum III';
+      case rp >= 600 && rp <= 659:
+        return 'Platinum II';
+      case rp >= 660 && rp <= 719:
+        return 'Platinum I';
+      case rp >= 720 && rp <= 789:
+        return 'Diamond IV';
+      case rp >= 790 && rp <= 859:
+        return 'Diamond III';
+      case rp >= 860 && rp <= 929:
+        return 'Diamond II';
+      case rp >= 930 && rp <= 999:
+        return 'Diamond I';
       case rp >= 1000:
         return 'Apex Predator';
       default:
